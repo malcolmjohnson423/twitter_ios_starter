@@ -41,13 +41,11 @@ class TweetTableViewCell: UITableViewCell {
     
     
     @IBAction func retweetTweet(_ sender: Any) {
-        
         TwitterAPICaller.client?.retweetTweet(tweetId: tweetId, success: {
             self.setRetweeted(true)
-        }, failure: { (Error) in
-            print("Error in retweeting \(Error)")
+        }, failure: { (error) in
+            print("Error in retweeting \(error)")
         })
-        
     }
     
     
@@ -55,18 +53,12 @@ class TweetTableViewCell: UITableViewCell {
         if (isRetweeted) {
             retweetButton.setImage(UIImage(named: "retweet-icon-green"), for: UIControl.State.normal)
             retweetButton.isEnabled = false
-        } else{
+        } else {
             retweetButton.setImage(UIImage(named: "retweet-icon"), for: UIControl.State.normal)
             retweetButton.isEnabled = true
         }
     }
     
-    
-    
-    
-    
-    
-  
     func setFavorite(_ isFavorited: Bool){
         favorited = isFavorited
         if (favorited) {
@@ -77,9 +69,6 @@ class TweetTableViewCell: UITableViewCell {
         }
     
     }
-    
-    
-    
     
     
     override func awakeFromNib() {

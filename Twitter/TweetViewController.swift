@@ -15,17 +15,12 @@ class TweetViewController: UIViewController {
         tweetTextView.becomeFirstResponder()
     }
     
-
-    
     @IBOutlet weak var tweetTextView: UITextView!
-    
-    
     
     @IBAction func cancel(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
     
-
     @IBAction func tweet(_ sender: Any) {
         if (!tweetTextView.text.isEmpty){
             TwitterAPICaller.client?.postTweet(tweetString: tweetTextView.text, success: {

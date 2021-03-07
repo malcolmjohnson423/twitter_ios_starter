@@ -80,7 +80,6 @@
 			children = (
 				6EBCF54D21E71F9400451C03 /* Launch Screen.storyboard */,
 				6EBCF52921DF07FC00451C03 /* Main.storyboard */,
-				6EBCF54321E047A500451C03 /* TwitterAPICaller.swift */,
 				6EBCF52521DF07FC00451C03 /* AppDelegate.swift */,
 				37D29B8521F90E3400984A88 /* Assets.xcassets */,
 				6EBCF53121DF07FE00451C03 /* Info.plist */,
@@ -88,6 +87,7 @@
 				B55252A125EC45AD0089AF38 /* HomeTableViewController.swift */,
 				B55252B425EC559D0089AF38 /* TweetTableViewCell.swift */,
 				B5AF8BE625F54DAF00A5B14C /* TweetViewController.swift */,
+				6EBCF54321E047A500451C03 /* TwitterAPICaller.swift */,
 			);
 			path = Twitter;
 			sourceTree = "<group>";
